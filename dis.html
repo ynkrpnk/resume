@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>History</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Android1.css">
+</head>
+<body>
+
+<header class="py-3 text-center text-white" style="background:#45db89;">
+  <h1 class="mb-0">Android</h1>
+  <p class="mb-0">Енциклопедична довідка</p>
+</header>
+ 
+  <nav class="text-center py-2" style="background:#2a9d8f;">
+  <a href="Android.html">Головна</a>
+  <a href="history.html">Історія</a>
+  <a href="development.html">Розробка та версії</a>
+  <a href="Characteristics.html">Характеристики</a>
+  <a href="Prevalence.html">Розповсюдженість</a>
+  <a href="dis.html"class="active">Переваги та недоліки</a>
+</nav>
+
+<select id="menuButton" class="form-select w-auto mt-2">
+  <option disabled selected>☰ Меню</option>
+  <option value="Android.html">Головна</option>
+  <option value="history.html">Історія</option>
+  <option value="development.html">Розробка та версії</option>
+  <option value="Characteristics.html">Характеристики</option>
+  <option value="Prevalence.html">Розповсюдженість</option>
+  <option value="dis.html">Переваги та недоліки</option>
+</select>
+
+<div class="container mt-4">
+  <div class="row g-4">
+
+    <aside class="col-12 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <h4 class="card-title">Скорочена довідка</h4>
+          <img src="Android_logo.jpg" alt="Android logo" class="img-fluid mb-3">
+<table class="table table-striped table-hover table-sm text-start my-table">
+  <tbody>
+    <tr>
+      <th>Розробник</th>
+      <td>Google</td>
+    </tr>
+    <tr>
+      <th>Платформа</th>
+      <td>Linux</td>
+    </tr>
+    <tr>
+      <th>Перший випуск</th>
+      <td>2008 р.</td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    </aside>
+
+    <main class="col-12 col-md-8 col-lg-9">
+      <div class="card h-100">
+        <div class="card-body">
+          <h2 class="text-center mb-3">Переваги та недоліки</h2>
+		        <p>Android має низку переваг, завдяки яким став лідером серед мобільних операційних систем. Насамперед це безкоштовність та відкритий код, що дозволяє виробникам і розробникам вільно використовувати й вдосконалювати систему. Крім того, Android вирізняється гнучкістю — його можна налаштовувати під різні пристрої та потреби користувачів.</p>
+			      <p>Ще однією важливою перевагою є велика кількість додатків у магазині Google Play. Користувачі мають доступ до мільйонів програм і ігор, що робить систему універсальною для роботи, навчання, розваг і повсякденного життя.</p>
+			      <p>Водночас Android має й певні недоліки. Одним із них є фрагментація пристроїв — на ринку існує безліч моделей смартфонів з різними версіями системи. Це призводить до різної якості оновлень і може ускладнювати роботу з деякими програмами, особливо на старих пристроях.</p>    
+ 
+         </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<footer class="text-center text-white py-3" style="background:#222;">
+  <p>Розробник: <a href="resume.html" class="text-white text-decoration-underline">Карпенко Ян</a></p>
+  <p id="quote"></p>
+</footer>
+
+  <script src="quote.js"></script>
+  <script>
+
+document.getElementById("menuButton").addEventListener("change", function() {
+  let page = this.value;
+  if(page) {
+    window.location.href = page;
+  }
+});
+</script>
+
+</body>
+</html>

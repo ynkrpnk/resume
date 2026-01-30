@@ -1,0 +1,84 @@
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 40px;
+    line-height: 1.5;
+    color:#102052; 
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif; 
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #490b0b; 
+    font-weight: bold; 
+    text-align:center; 
+}
+
+h2 {
+    font-size: 22px;
+    color: #330b0b; 
+    font-weight: 600;
+    text-align:left; 
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+a {
+    color: #3d0000;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 300px;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #360909;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #911f1f;
+}
+
+body {
+    background-image: url("fon.png"); 
+    background-repeat: repeat;          
+}
+
+.has-success input,
+.has-success textarea {
+  border: 2px solid #28a745;
+}
+
+.has-error input,
+.has-error textarea {
+  border: 2px solid #dc3545;
+}

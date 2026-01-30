@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #3dbb8d;
+  line-height: 1.6;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+}
+
+#menuButton {
+  display: none;
+}
+
+#menuButton:hover { 
+  background: #21867a; 
+}
+
+@media (max-width: 992px) {
+  nav { display: none; }
+  #menuButton { display: block; }
+  nav.show { display: flex; flex-direction: column; }
+}
